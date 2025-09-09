@@ -6,3 +6,41 @@ For those of us that are plagued by Realtek Wireless NICs (RTL8852BE in my case)
 *Note: This script was written and tested on Ubuntu 24.04.3, taking advantage of nmcli, your results may vary and may require tweaking for your personal choice in network management. I will add various spins of it eventually, but for now this meets my needs and can hopefully help you.
 
 If you have suggestions on how to improve it, I am all ears. I am by no means an expert and am just sharing my tricks.
+
+# Automatic Installtion
+
+Coming soon.
+
+# Getting Started Manually
+### Create a shell script to house the watchdog:
+<code> sudo nano /usr/local/bin/wifi-watchdog.sh </code>
+
+Insert contents of wifi-watchdog.sh from this repo.
+
+Save with Ctrl+X, Y, Enter
+
+### Create a service file for the watchdog:
+<code> sudo nano /etc/systemd/system/wifi-watchdog.service </code>
+
+Insert contents of wifi-watchdog.service from this repo.
+
+
+Save with Ctrl+X, Y, Enter
+
+### Create a timer file to execute the watchdog:
+<code> sudo nano /etc/systemd/system/wifi-watchdog.timer </code>
+
+Insert contents of wifi-watchdog.timer from this repo.
+
+Save with Ctrl+X, Y, Enter
+
+### Eable the watchdog:
+<code>sudo systemctl daemon-reload</code>
+<code>sudo systemctl enable --now wifi-watchdog.timer</code>
+
+### Optional: Force run the service out of timer cycle:
+<code> sudo systemctl start wifi-watchdog.service </code>
+
+### Optional: View the logs:
+<code> cat /var/log/wifi-watchdog.log </code>
+<code> journalctl -u wifi-watchdog.service --no-pager </code>
