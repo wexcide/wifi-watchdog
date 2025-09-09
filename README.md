@@ -13,7 +13,7 @@ If you have suggestions on how to improve it, I am all ears. I am by no means an
 
 Please use at your own risk, in theory is is no different from the manual install:
 
-<code>sudo bash -c "$(wget https://raw.githubusercontent.com/wexcide/wifi-watchdog/refs/heads/main/setup-wifi-watchdog.sh -O -)"</code>
+<code>sudo bash -c "$(wget https://raw.githubusercontent.com/wexcide/wifi-watchdog/main/setup-wifi-watchdog.sh -O -)"</code>
 
 # Getting Started Manually
 ### Create a shell script to house the watchdog:
