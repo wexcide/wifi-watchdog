@@ -9,9 +9,9 @@ If you have suggestions on how to improve it, I am all ears. I am by no means an
 
 <b><u>If you encounter any bugs, please report them! While this is more a personal endeavor, if it helps someone else out, I would love to better the script!</b></u>
 
-# Automatic Installation (Untested)
+# Automatic Installation (Tested on Ubuntu 24.04.3)
 
-Please use at your own risk, in theory it is no different from the manual install:
+Always use cashing when bashing from a link in general, please feel free to read my script beforehand to see that it is safe:
 
 <code>sudo bash -c "$(wget https://raw.githubusercontent.com/wexcide/wifi-watchdog/main/setup-wifi-watchdog.sh -O -)"</code>
 
