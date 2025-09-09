@@ -9,6 +9,7 @@ read -rp "Enter your Wi-Fi interface name (e.g., wlan0, wlp3s0): " INTERFACE
 # Confirm interface exists
 if ! nmcli device status | grep -q "$INTERFACE"; then
     echo "Error: Interface '$INTERFACE' not found in NetworkManager."
+    echo "Run 'ip a' in terminal to determine correct adapter."
     exit 1
 fi
 
