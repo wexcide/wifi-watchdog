@@ -35,12 +35,12 @@ Insert contents of wifi-watchdog.timer from this repo.
 Save with Ctrl+X, Y, Enter
 
 ### Eable the watchdog:
-<code>sudo systemctl daemon-reload</code>
+<code>sudo systemctl daemon-reload</code></br>
 <code>sudo systemctl enable --now wifi-watchdog.timer</code>
 
 ### Optional: Force run the service out of timer cycle:
 <code> sudo systemctl start wifi-watchdog.service </code>
 
 ### Optional: View the logs:
-<code> cat /var/log/wifi-watchdog.log </code>
+<code> cat /var/log/wifi-watchdog.log </code></br>
 <code> journalctl -u wifi-watchdog.service --no-pager </code>
