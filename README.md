@@ -7,7 +7,7 @@ For those of us that are plagued by Realtek Wireless NICs (RTL8852BE in my case)
 
 If you have suggestions on how to improve it, I am all ears. I am by no means an expert and am just sharing my tricks.
 
-# Automatic Installtion
+# Automatic Installtion (Untested)
 
 Coming soon.
 
