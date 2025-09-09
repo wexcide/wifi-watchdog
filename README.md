@@ -11,7 +11,7 @@ If you have suggestions on how to improve it, I am all ears. I am by no means an
 
 # Automatic Installation (Tested on Ubuntu 24.04.3)
 
-Always use cashing when bashing from a link in general, please feel free to read my script beforehand to see that it is safe:
+Always use caution when bashing from a link in general, please feel free to read my script beforehand to see that it is safe:
 
 <code>sudo bash -c "$(wget https://raw.githubusercontent.com/wexcide/wifi-watchdog/main/setup-wifi-watchdog.sh -O -)"</code>
 
