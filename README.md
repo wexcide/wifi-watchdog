@@ -1,9 +1,9 @@
 # wifi-watchdog
 A systemd script to monitor wifi connections and auto cycle the adapter on failure.
 
-For those of us that are plagued by Realtek Wireless NICs (RTL8852BE in my case) intermittently failing to process network traffic in various Linux distros, this script will utilize systemd timers to monitor the connection and reset it if necessary. By default, it checks and logs every 2 minutes. Feel free to adjust as necessary and disable logging if desired.
+For those of us that are plagued by Realtek Wireless NICs (RTL8852BE in my case) intermittently failing to process network traffic in various Linux distros, this script will utilize systemd timers to monitor the connection and reset it if necessary. By default, it checks and logs every 2 minutes. Feel free to adjust as necessary and disable logging if desired. I would consider disabling logging once you know it is working by commenting out log lines in wifi-watchdog.sh but it is entirely up to you and how much you want to log vs how much disk space you have.
 
-*Note: This script was written and tested on Ubuntu 24.04.3, taking advantage of nmcli, your results may vary and may require tweaking for your personal choice in network management. I will add various spins of it eventually, but for now this meets my needs and can hopefully help you.
+*Note: This script was written and tested on Ubuntu 24.04.3, taking advantage of nmcli, your results may vary and may require tweaking for your personal choice in network management. I will add various spins of it eventually, but for now this meets my needs and can hopefully help you. In theory it will should work 100% on any distro using systemd and nmcli (Ex: Fedora).
 
 If you have suggestions on how to improve it, I am all ears. I am by no means an expert and am just sharing my tricks.
 
