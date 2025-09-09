@@ -7,9 +7,13 @@ For those of us that are plagued by Realtek Wireless NICs (RTL8852BE in my case)
 
 If you have suggestions on how to improve it, I am all ears. I am by no means an expert and am just sharing my tricks.
 
+<b><u>If you encounter any bugs, please report them! While this is more a personal endeavor, if it helps someone else out, I would love to better the script!</b></u>
+
 # Automatic Installtion (Untested)
 
-Coming soon.
+Please use at your own risk, in theory is is no different from the manual install:
+
+<code>sudo bash -c "$(wget https://raw.githubusercontent.com/wexcide/wifi-watchdog/refs/heads/main/setup-wifi-watchdog.sh -O -)"</code>
 
 # Getting Started Manually
 ### Create a shell script to house the watchdog:
