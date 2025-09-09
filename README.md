@@ -9,7 +9,7 @@ If you have suggestions on how to improve it, I am all ears. I am by no means an
 
 <b><u>If you encounter any bugs, please report them! While this is more a personal endeavor, if it helps someone else out, I would love to better the script!</b></u>
 
-# Automatic Installtion (Untested)
+# Automatic Installation (Untested)
 
 Please use at your own risk, in theory it is no different from the manual install:
 
